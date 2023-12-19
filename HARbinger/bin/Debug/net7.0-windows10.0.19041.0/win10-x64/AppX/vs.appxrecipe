@@ -29,13 +29,13 @@
     <AppXManifest Include="D:\Repositories\HARbinger\HARbinger\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-12-19T16:41:26.524</Modified>
+      <Modified>2023-12-19T17:22:31.177</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Repositories\HARbinger\HARbinger\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-12-19T16:06:23.682</Modified>
+      <Modified>2023-12-19T17:22:30.934</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Repositories\HARbinger\HARbinger\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\HARbinger.runtimeconfig.json">
       <PackagePath>HARbinger.runtimeconfig.json</PackagePath>
@@ -43,15 +43,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Repositories\HARbinger\HARbinger\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\HARbinger.dll">
       <PackagePath>HARbinger.dll</PackagePath>
-      <Modified>2023-12-19T16:41:26.053</Modified>
+      <Modified>2023-12-19T17:22:30.554</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Repositories\HARbinger\HARbinger\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>HARbinger.exe</PackagePath>
-      <Modified>2023-12-19T16:41:26.058</Modified>
+      <Modified>2023-12-19T17:22:30.557</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Repositories\HARbinger\HARbinger\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\HARbinger.deps.json">
       <PackagePath>HARbinger.deps.json</PackagePath>
-      <Modified>2023-12-19T16:06:23.547</Modified>
+      <Modified>2023-12-19T17:16:47.027</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.11\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>

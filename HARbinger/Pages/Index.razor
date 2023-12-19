@@ -1,7 +1,9 @@
 ﻿@page "/"
 @using System.Text.Json;
 @using HARbinger.Models;
+@using HARbinger.Services;
 
+@inject NavigationManager NavigationManager
 @inject ISnackbar Snackbar
 
 <style>
@@ -15,10 +17,9 @@
     }
 </style>
 
-<MudPaper Class="d-flex justify-center flex-grow1 gap-4">
+<MudPaper Class="d-flex justify-center align-content-center flex-grow1 gap-4">
 <MudStack Style="width: 50%">
     <MudFileUpload T="IReadOnlyList<IBrowserFile>"
-                      AppendMultipleFiles
                     OnFilesChanged="OnInputFileChanged"
                     Hidden="@false"
                     InputClass="absolute mud-width-full mud-height-full overflow-hidden z-20"
@@ -26,63 +27,23 @@
      @ondragenter="@SetDragClass"
      @ondragleave="@ClearDragClass"
      @ondragend="@ClearDragClass">
-         <ButtonTemplate>
-             <MudPaper Height="300px"
-                       Outlined="true"
-                       Class="@_dragClass">
-                 <MudText Typo="Typo.h6">
+        <ButtonTemplate>
+            <MudPaper 
+                Height="300px"
+                Outlined="true"
+                Class="@_dragClass">
+                <MudIcon Icon="@Icons.Material.Filled.CloudUpload"></MudIcon>
+                    <MudText Typo="Typo.h6">
                      Drag and drop files here or click
                  </MudText>
-                 @foreach (var file in _fileNames)
-                {
-                    <MudChip Color="Color.Dark" Text="@file" />
-                }
-            </MudPaper>
-            <MudToolBar DisableGutters="true"
-                        Class="relative d-flex justify-end gap-4 z-30">
-                <MudButton HtmlTag="label"
-                           Color="Color.Primary"
-                           for="@context.Id"
-                           Variant="Variant.Filled">
-                    Open file picker
-                </MudButton>
-                <MudButton OnClick="@Upload"
-                           Color="Color.Primary"
-                           Disabled="@(!_fileNames.Any())"
-                           Variant="Variant.Filled">
-                    Upload
-                </MudButton>
-                <MudButton OnClick="@Clear"
-                           Color="Color.Error"
-                           Disabled="@(!_fileNames.Any())"
-                           Variant="Variant.Filled">
-                    Clear
-                </MudButton>
-            </MudToolBar>
+            </MudPaper>            
         </ButtonTemplate>
     </MudFileUpload>
 </MudStack>
 </MudPaper>
 
-<MudButton
-    OnClick="OpenFileAsync"
-    Variant="Variant.Filled" 
-    Color="Color.Primary">Open HAR File</MudButton>
+@code {
 
-
-
-
-    @code {
-    private bool _multiSelect = true;
-    private TableGroupDefinition<Entries> _groupDefinition = new()
-        {
-            GroupName = "Query",
-            Indentation = false,
-            Expandable = false,
-            Selector = (e) => e.request.url
-        };
-
-    private IEnumerable<Entries> Entries = new List<Entries>();
 
     public async void OpenFileAsync()
     {
@@ -111,12 +72,7 @@
         {
             using (var fileStream = await result.OpenReadAsync())
             {
-                using (StreamReader sr = new(fileStream))
-                {
-                    var harFile = JsonSerializer.Deserialize<RootObject>(sr.ReadToEnd());
-                    Entries = harFile.log.entries;
-                    StateHasChanged();
-                }
+                
             }
         }
         catch (Exception ex)
@@ -126,24 +82,25 @@
     }
 
 #nullable enable
-    private const string DefaultDragClass = "relative rounded-lg border-2 border-dashed pa-4 mt-4 mud-width-full mud-height-full z-10 d-flex justify-center flex-grow1 gap-4";
+    private const string DefaultDragClass = "relative rounded-lg border-2 border-dashed pa-4 mt-4 mud-width-full mud-height-full z-10 d-flex justify-center align-content-center flex-grow-1 gap-4";
     private string _dragClass = DefaultDragClass;
-    private readonly List<string> _fileNames = new();
 
     private async Task Clear()
     {
-        _fileNames.Clear();
         ClearDragClass();
         await Task.Delay(100);
     }
 
-    private void OnInputFileChanged(InputFileChangeEventArgs e)
+    private async void OnInputFileChanged(InputFileChangeEventArgs e)
     {
         ClearDragClass();
-        var files = e.GetMultipleFiles();
-        foreach (var file in files)
+        if(e.File == null)
         {
-            _fileNames.Add(file.Name);
+            return;
+        }
+        if(await HarFileService.Process(e.File))
+        {
+            NavigationManager.NavigateTo("/session-details");
         }
     }
 
