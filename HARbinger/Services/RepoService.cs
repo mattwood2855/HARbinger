@@ -16,7 +16,13 @@ namespace HARbinger.Services
 
     public static class RepoService
     {
+        public static string Path { get; private set; }
         public static Repository Repository { get; private set; }
+
+        public static string GetMockPath()
+        {
+            return Path + "/mock_server/src/mock_files/graph";
+        }
 
         public static RepoData? GetRepoDataForPath(string path)
         {
@@ -32,6 +38,7 @@ namespace HARbinger.Services
 
             try
             {
+                Path = path;
                 Repository = new Repository(path);
                 var repoData = new RepoData(Repository);
                 return repoData;

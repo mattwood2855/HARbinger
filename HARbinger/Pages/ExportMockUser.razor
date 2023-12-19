@@ -1,4 +1,19 @@
 ﻿@page "/export-mock-user"
+@using HARbinger.Dialogs;
+@using HARbinger.Services;
+
+<style>
+    .fullscreen-container {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        height: 100vh; /* Full viewport height */
+        width: 100vw; /* Full viewport width */
+    }
+
+    .my-custom-class {
+        backdrop-filter: blur(10px);
+    }
+</style>
 
 <MudPaper Elevation="25">
     <MudToolBar>
@@ -8,17 +23,65 @@
         <MudSpacer />
         <MudText>Export User</MudText>
         <MudSpacer />
-        <MudButton Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.NavigateNext" Color="Color.Primary">Export</MudButton>
+        <MudButton 
+            Disabled="_exportDisabled"
+            OnClick="Export"
+            Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.NavigateNext" Color="Color.Primary">Export</MudButton>
     </MudToolBar>
 </MudPaper>
 
+<div class="fullscreen-container">
+    <MudPaper Style="height: 300px; width: 50%; margin-top:16px; padding: 12px;">
+        <MudGrid>
+            <MudItem xs="12">
+                <MudTextField @bind-Value="_mockUsername"
+                              T="string"
+                              DebounceInterval="500"
+                              Label="Mock Username"
+                              OnDebounceIntervalElapsed="OnUsernameUpdated" />
+            </MudItem>
+            
+        </MudGrid>
+    </MudPaper>
+</div>
 
-
+@inject IDialogService DialogService
 @inject NavigationManager NavigationManager
 
 @code {
+    private bool _exportDisabled = true;
+    private string _mockUsername = string.Empty;
+
     private void Back()
     {
         NavigationManager.NavigateTo("/repo-settings");
+    }
+
+    private void Export()
+    {
+        var progress = new Progress<ExportProgress>();
+        ExportService.ExportAllMocks(_mockUsername, progress);
+        var options = new DialogOptions 
+        { 
+            CloseOnEscapeKey = false,
+            ClassBackground = "my-custom-class",
+            DisableBackdropClick = true,
+            MaxWidth = MaxWidth.Medium,
+        };
+        var dialogParameters = new DialogParameters();
+        dialogParameters.Add("Progress", progress);
+        DialogService.Show<ExportDialog>("Exporting", dialogParameters, options);
+    }
+
+    private void OnUsernameUpdated()
+    {
+        if(!string.IsNullOrWhiteSpace(_mockUsername))
+        {
+            _exportDisabled = false;
+        }
+        else
+        {
+            _exportDisabled = true;
+        }
     }
 }

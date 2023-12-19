@@ -1,0 +1,40 @@
+﻿@using HARbinger.Services;
+<MudDialog>
+    <DialogContent>
+        <MudText Typo="Typo.h6">Exporting HAR session to mock user:</MudText>
+        <MudProgressLinear 
+            Color="Color.Primary"
+            Max="1"
+            Min="0"
+            Striped="true" 
+            Size="Size.Large" 
+            Value="_progressValue" Class="my-7" />
+        <MudText Typo="Typo.subtitle1">Exporting @_currentFile</MudText>
+    </DialogContent>
+    <DialogActions>
+        <MudButton 
+            Color="Color.Error"
+            OnClick="Cancel">Cancel</MudButton>
+    </DialogActions>
+</MudDialog>
+@code {
+    [CascadingParameter] MudDialogInstance MudDialog { get; set; }
+
+    [Parameter] public Progress<ExportProgress> Progress { get; set; }
+
+    private string _currentFile = string.Empty;
+    private float _progressValue = 0;
+
+    void Cancel() => MudDialog.Cancel();
+
+    protected override Task OnParametersSetAsync()
+    {
+        Progress.ProgressChanged += (sender, progress) =>
+        {
+            _currentFile = progress.CurrentRequest;
+            _progressValue = progress.PercentComplete;
+            StateHasChanged();
+        };
+        return base.OnParametersSetAsync();
+    }
+}
