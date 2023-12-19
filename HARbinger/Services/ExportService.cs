@@ -33,6 +33,7 @@ namespace HARbinger.Services
         internal static async Task ExportMockAsync(Mock mock, IProgress<ExportProgress> progress, string mocksDirectory = null)
         {
             mocksDirectory ??= _mocksDirectory;
+            Directory.CreateDirectory(mocksDirectory);
             for (var index = 0; index < mock.Responses.Length; index++)
             {
                 var response = mock.Responses[index];

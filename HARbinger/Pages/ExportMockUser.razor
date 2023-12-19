@@ -47,6 +47,7 @@
 
 @inject IDialogService DialogService
 @inject NavigationManager NavigationManager
+@inject ISnackbar Snackbar
 
 @code {
     private bool _exportDisabled = true;
@@ -60,17 +61,25 @@
     private void Export()
     {
         var progress = new Progress<ExportProgress>();
-        ExportService.ExportAllMocks(_mockUsername, progress);
-        var options = new DialogOptions 
-        { 
-            CloseOnEscapeKey = false,
-            ClassBackground = "my-custom-class",
-            DisableBackdropClick = true,
-            MaxWidth = MaxWidth.Medium,
-        };
-        var dialogParameters = new DialogParameters();
-        dialogParameters.Add("Progress", progress);
-        DialogService.Show<ExportDialog>("Exporting", dialogParameters, options);
+        try
+        {
+            ExportService.ExportAllMocks(_mockUsername, progress);
+            var options = new DialogOptions
+                {
+                    CloseOnEscapeKey = false,
+                    ClassBackground = "my-custom-class",
+                    DisableBackdropClick = true,
+                    MaxWidth = MaxWidth.Medium,
+                };
+            var dialogParameters = new DialogParameters();
+            dialogParameters.Add("Progress", progress);
+            DialogService.Show<ExportDialog>("Exporting", dialogParameters, options);
+        }
+        catch(Exception ex)
+        {
+            Snackbar.Add(ex.Message, Severity.Error);
+            Console.WriteLine(ex.Message);
+        }
     }
 
     private void OnUsernameUpdated()
