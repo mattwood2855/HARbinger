@@ -29,13 +29,13 @@
     <AppXManifest Include="D:\Repositories\HARbinger\HARbinger\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-12-19T17:22:31.177</Modified>
+      <Modified>2023-12-19T19:33:52.379</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Repositories\HARbinger\HARbinger\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-12-19T17:22:30.934</Modified>
+      <Modified>2023-12-19T18:53:38.312</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Repositories\HARbinger\HARbinger\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\HARbinger.runtimeconfig.json">
       <PackagePath>HARbinger.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Repositories\HARbinger\HARbinger\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\HARbinger.dll">
       <PackagePath>HARbinger.dll</PackagePath>
-      <Modified>2023-12-19T17:22:30.554</Modified>
+      <Modified>2023-12-19T19:33:51.888</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Repositories\HARbinger\HARbinger\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>HARbinger.exe</PackagePath>
-      <Modified>2023-12-19T17:22:30.557</Modified>
+      <Modified>2023-12-19T19:33:51.892</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Repositories\HARbinger\HARbinger\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\HARbinger.deps.json">
       <PackagePath>HARbinger.deps.json</PackagePath>
