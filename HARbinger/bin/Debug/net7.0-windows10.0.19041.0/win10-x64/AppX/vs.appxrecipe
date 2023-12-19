@@ -29,29 +29,29 @@
     <AppXManifest Include="D:\Repositories\HARbinger\HARbinger\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-12-19T19:33:52.379</Modified>
+      <Modified>2023-12-19T20:42:19.606</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Repositories\HARbinger\HARbinger\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-12-19T18:53:38.312</Modified>
+      <Modified>2023-12-19T20:34:15.790</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Repositories\HARbinger\HARbinger\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\HARbinger.runtimeconfig.json">
       <PackagePath>HARbinger.runtimeconfig.json</PackagePath>
-      <Modified>2023-12-18T22:21:05.230</Modified>
+      <Modified>2023-12-19T20:06:33.281</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Repositories\HARbinger\HARbinger\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\HARbinger.dll">
       <PackagePath>HARbinger.dll</PackagePath>
-      <Modified>2023-12-19T19:33:51.888</Modified>
+      <Modified>2023-12-19T20:42:19.118</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Repositories\HARbinger\HARbinger\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>HARbinger.exe</PackagePath>
-      <Modified>2023-12-19T19:33:51.892</Modified>
+      <Modified>2023-12-19T20:42:19.123</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Repositories\HARbinger\HARbinger\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\HARbinger.deps.json">
       <PackagePath>HARbinger.deps.json</PackagePath>
-      <Modified>2023-12-19T17:16:47.027</Modified>
+      <Modified>2023-12-19T20:06:33.218</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.11\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -809,6 +809,10 @@
       <PackagePath>WinRT.Runtime.dll</PackagePath>
       <Modified>2023-06-09T20:10:26.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PC\.nuget\packages\libgit2sharp\0.29.0\lib\net6.0\LibGit2Sharp.dll">
+      <PackagePath>LibGit2Sharp.dll</PackagePath>
+      <Modified>2023-12-03T20:44:34.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC\.nuget\packages\microsoft.aspnetcore.authorization\7.0.5\lib\net7.0\Microsoft.AspNetCore.Authorization.dll">
       <PackagePath>Microsoft.AspNetCore.Authorization.dll</PackagePath>
       <Modified>2023-03-25T02:40:46.000</Modified>
@@ -992,6 +996,10 @@
     <AppxPackagedFile Include="C:\Users\PC\.nuget\packages\system.io.pipelines\7.0.0\lib\net7.0\System.IO.Pipelines.dll">
       <PackagePath>System.IO.Pipelines.dll</PackagePath>
       <Modified>2022-10-18T16:15:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PC\.nuget\packages\libgit2sharp.nativebinaries\2.0.321\runtimes\win-x64\native\git2-a2bde63.dll">
+      <PackagePath>git2-a2bde63.dll</PackagePath>
+      <Modified>2023-11-27T01:57:44.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC\.nuget\packages\microsoft.graphics.win2d\1.0.5.1\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>

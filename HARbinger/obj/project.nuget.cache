@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "nn0xQ6UGbTwgM0S6Ob20N0ovPsMw2pm9dim5RLdL1SZu/MOTaHswwYIVfjkBm4C4bmoMQ7kEIv26O2hnzO3yjQ==",
+  "dgSpecHash": "EbVhQeIAEXiyKgWrIdETcUrXP+PC2RiX8CRB5f0PDImsAPATsksBQ89LXy1lHp14YkfzNLhqmrUsl9OE06xbtg==",
   "success": true,
   "projectFilePath": "D:\\Repositories\\HARbinger\\HARbinger\\HARbinger.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\libgit2sharp\\0.29.0\\libgit2sharp.0.29.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\libgit2sharp.nativebinaries\\2.0.321\\libgit2sharp.nativebinaries.2.0.321.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.5\\microsoft.aspnetcore.authorization.7.0.5.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.5\\microsoft.aspnetcore.components.7.0.5.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\7.0.5\\microsoft.aspnetcore.components.analyzers.7.0.5.nupkg.sha512",

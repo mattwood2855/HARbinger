@@ -24,7 +24,9 @@
         <MudSpacer />
         <MudText>Select Content To Export</MudText>
         <MudSpacer />
-        <MudButton Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.NavigateNext" Color="Color.Primary">Next</MudButton>
+        <MudButton 
+            OnClick="Next"
+            Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.NavigateNext" Color="Color.Primary">Next</MudButton>
     </MudToolBar>
 </MudPaper>
 <MudPaper Class="d-flex justify-center flex-grow1 gap-4">
@@ -77,5 +79,10 @@
         private void Back()
         {
             NavigationManager.NavigateTo("/import-file");
+        }
+
+        private void Next()
+        {
+            NavigationManager.NavigateTo("/repo-settings");
         }
     }

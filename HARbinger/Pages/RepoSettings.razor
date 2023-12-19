@@ -1,6 +1,17 @@
 ﻿@page "/repo-settings"
 
 @using HARbinger.Data
+@using HARbinger.Services;
+@using LibGit2Sharp;
+
+<style>
+    .fullscreen-container {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        height: 100vh; /* Full viewport height */
+        width: 100vw; /* Full viewport width */
+    }
+</style>
 
 <MudPaper Elevation="25">
     <MudToolBar>
@@ -10,59 +21,77 @@
         <MudSpacer />
         <MudText>Select Repo To Export To</MudText>
         <MudSpacer />
-        <MudButton Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.NavigateNext" Color="Color.Primary">Next</MudButton>
+        <MudButton 
+            OnClick="Next"
+            Disabled ="@(_repoNameDisabled || _branchDisabled)"
+            Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.NavigateNext" Color="Color.Primary">Next</MudButton>
     </MudToolBar>
 </MudPaper>
 
-<style>
-    .fullscreen-container {
-        display: flex;
-        justify-content: center; /* Center horizontally */
-        align-items: center; /* Center vertically */
-        height: 100vh; /* Full viewport height */
-        width: 100vw; /* Full viewport width */
-    }
-</style>
 
 <div class="fullscreen-container">
-    <MudPaper Class="rounded-bl-xl" Style="width: 50%">
-        <MudForm @ref="_form">
-            <MudTextField T="string" Label="Repo Directory" Required="true" RequiredError="Repo Directory Is Required!" />
-            <MudTextField @bind-Value="_repoName" Label="Repo" ReadOnly="true" Variant="Variant.Text" />
-            <MudSelect T="string" Label="Branch" AnchorOrigin="Origin.BottomCenter">
-                <MudSelectItem Value="@("main")" />
-                <MudSelectItem Value="@("self-install/bug/SIP-1345-Test")" />
-                <MudSelectItem Value="@("self-install/task/SIP-1677-Test")" />
-            </MudSelect>
-        </MudForm>
+    <MudPaper Class="" Style="width: 50%; margin-top:16px; padding: 12px;">
+        <MudGrid>
+            <MudItem xs="12">
+                <MudTextField @bind-Value="RepoDirectory"
+                              T="string"
+                              DebounceInterval="500"
+                              Label="Repo Directory"
+                              OnDebounceIntervalElapsed="OnRepoDirectoryUpdated" />
+            </MudItem>
+            <MudItem xs="12">
+                <MudTextField @bind-Value="_repoName"
+                              Disabled="_repoNameDisabled"
+                              Label="Repo" 
+                              ReadOnly="true" 
+                              Variant="Variant.Text" />
+            </MudItem>
+            <MudItem xs="12">
+                <MudTextField @bind-Value="_branchName"
+                              Disabled="_branchDisabled"
+                              Label="Repo" 
+                              ReadOnly="true" 
+                              Variant="Variant.Text" />
+            </MudItem>
+        </MudGrid>        
     </MudPaper>
 </div>
-<MudGrid>
-    <MudItem xs="12" sm="7">
-        <MudPaper Class="pa-4">
-            
-        </MudPaper>
-        <MudPaper Class="pa-4 mt-4">
-            <MudButton Variant="Variant.Filled" Color="Color.Primary" DisableElevation="true" OnClick="@(()=>_form.Validate())">Load</MudButton>
-        </MudPaper>
-    </MudItem>
-    <MudItem xs="12" sm="5">
-        <MudPaper Class="pa-4 mud-height-full">
-            
-        </MudPaper>
-    </MudItem>
-</MudGrid>
 
 @inject NavigationManager NavigationManager
 
 @code {
-    private WeatherForecast[] forecasts;
-    MudTextField<string> pwField1;
+    private string _branchName = string.Empty;  
+    private bool _branchDisabled = true;
     private MudForm _form;
-    private string _repoName = "spectrum-web";
-
+    public string RepoDirectory { get; set; } = string.Empty;
+    private string _repoName = string.Empty;
+    private bool _repoNameDisabled = true;
+    
     private void Back()
     {
         NavigationManager.NavigateTo("/session-details");
+    }
+
+    private void Next()
+    {
+        NavigationManager.NavigateTo("/export-mock-user");
+    }
+
+    private void OnRepoDirectoryUpdated()
+    {
+        var repoData = RepoService.GetRepoDataForPath(RepoDirectory);
+        if (repoData == null)
+        {
+            _repoName = string.Empty;
+            _branchName = string.Empty;
+            _repoNameDisabled = true;
+            _branchDisabled = true;
+            return;
+        }
+        _repoName = repoData.Name;
+        _branchName = repoData.Branch;
+
+        _repoNameDisabled = false;
+        _branchDisabled = false;
     }
 }

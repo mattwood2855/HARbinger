@@ -11,14 +11,13 @@
     .fullscreen-container {
         display: flex;
         justify-content: center; /* Center horizontally */
-        align-items: center; /* Center vertically */
         height: 100vh; /* Full viewport height */
-        width: 100vw; /* Full viewport width */
+        width: 100vw; /* Full viewport width */        
     }
 </style>
 
 <div class="fullscreen-container">
-    <MudStack Style="width: 50%">       
+    <MudStack Style="width: 50%; margin-top: 16px;">
         <MudFileUpload T="IReadOnlyList<IBrowserFile>"
                         OnFilesChanged="OnInputFileChanged"
                         Hidden="@false"
