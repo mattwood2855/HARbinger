@@ -36,19 +36,28 @@ namespace HARbinger.Services
             Directory.CreateDirectory(mocksDirectory);
             for (var index = 0; index < mock.Responses.Length; index++)
             {
-                var response = mock.Responses[index];
-                if(progress != null)
+                try
                 {
-                    var report = new ExportProgress
+                    var response = mock.Responses[index];
+                    if (progress != null)
                     {
-                        CurrentRequest = mock.Name,
-                        PercentComplete = index / mock.Responses.Length
-                    };
-                    progress.Report(report);
+                        var report = new ExportProgress
+                        {
+                            CurrentRequest = mock.Name,
+                            PercentComplete = index / mock.Responses.Length
+                        };
+                        progress.Report(report);
+                    }
+                    var path = $"{mocksDirectory}{Path.DirectorySeparatorChar}{_mocksDirectoryByType[response.Type]}{Path.DirectorySeparatorChar}";
+                    Directory.CreateDirectory(path);
+                    await File.WriteAllTextAsync(
+                        $"{path}{mock.Name.Replace(" ", string.Empty).ToLowerInvariant()}.json",
+                        $"{{\n  \"orchestratedResponses\": [{string.Join(",\n", response.Contents)}]\n}}").ConfigureAwait(false);
                 }
-                await File.WriteAllTextAsync(
-                    $"{mocksDirectory}{Path.DirectorySeparatorChar}{_mocksDirectoryByType[response.Type]}{Path.DirectorySeparatorChar}{mock.Name.Replace(" ", string.Empty).ToLowerInvariant()}.json",
-                    $"{{\n  \"orchestratedResponses\": [{string.Join(",\n", response.Contents)}]\n}}").ConfigureAwait(false);
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex);
+                }
             }
         }
     }
