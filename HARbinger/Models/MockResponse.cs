@@ -4,6 +4,6 @@
     {
         public MockResponseType Type { get; set; }
         public string Name { get; set; }
-        public string Contents { get; set; }
+        public string[] Contents { get; set; }
     }
 }
