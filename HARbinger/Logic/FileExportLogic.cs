@@ -12,14 +12,13 @@ namespace HARbinger.Logic
             {  MockResponseType.Query, "query" }
         };
 
-        internal static async Task ExportMocksAsync(Mock[] mocks, string mocksDirectory = null)
+        internal static async Task ExportMockAsync(Mock mock, string mocksDirectory = null)
         {
             mocksDirectory ??= _mocksDirectory;
-            foreach (var mock in mocks)
-                foreach (var response in mock.Responses)
-                    await File.WriteAllLinesAsync(
-                        $"{mocksDirectory}{Path.DirectorySeparatorChar}{_mocksDirectoryByType[response.Type]}{Path.DirectorySeparatorChar}{mock.Name.Replace(" ", string.Empty).ToLowerInvariant()}.json",
-                        response.Contents).ConfigureAwait(false);
+            foreach (var response in mock.Responses)
+                await File.WriteAllLinesAsync(
+                    $"{mocksDirectory}{Path.DirectorySeparatorChar}{_mocksDirectoryByType[response.Type]}{Path.DirectorySeparatorChar}{mock.Name.Replace(" ", string.Empty).ToLowerInvariant()}.json",
+                    response.Contents).ConfigureAwait(false);
         }
     }
 }
