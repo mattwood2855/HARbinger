@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HARbinger.App", "HARbinger.App\HARbinger.App.csproj", "{234D20E0-F861-4E27-8901-88754FE10A97}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HARbinger", "HARbinger\HARbinger.csproj", "{8050CD54-35FE-48A4-9256-1D74F9FA928A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,17 +11,17 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{234D20E0-F861-4E27-8901-88754FE10A97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{234D20E0-F861-4E27-8901-88754FE10A97}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{234D20E0-F861-4E27-8901-88754FE10A97}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{234D20E0-F861-4E27-8901-88754FE10A97}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{234D20E0-F861-4E27-8901-88754FE10A97}.Release|Any CPU.Build.0 = Release|Any CPU
-		{234D20E0-F861-4E27-8901-88754FE10A97}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{8050CD54-35FE-48A4-9256-1D74F9FA928A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8050CD54-35FE-48A4-9256-1D74F9FA928A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8050CD54-35FE-48A4-9256-1D74F9FA928A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8050CD54-35FE-48A4-9256-1D74F9FA928A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8050CD54-35FE-48A4-9256-1D74F9FA928A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8050CD54-35FE-48A4-9256-1D74F9FA928A}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {FF15E630-824E-4B10-A4C5-27E0CEADF124}
+		SolutionGuid = {55E012D3-0DDF-4AA0-B157-8A6D042F7982}
 	EndGlobalSection
 EndGlobal

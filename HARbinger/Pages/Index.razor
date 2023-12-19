@@ -1,0 +1,108 @@
+﻿@page "/"
+@using System.Text.Json;
+@using HARbinger.Models;
+
+<style>
+    .mud-table-cell-custom-group {
+        font-weight: 500;
+    }
+
+    .mud-table-cell-custom-group-footer {
+        padding-bottom: 50px;
+        text-align: right;
+    }
+</style>
+
+<h1>Select A .har file to begin</h1>
+
+<MudButton
+    OnClick="OpenFileAsync"
+    Variant="Variant.Filled" 
+    Color="Color.Primary">Open HAR File</MudButton>
+
+<MudTable Hover="true" Breakpoint="Breakpoint.Sm" Height="500px" FixedHeader="true"
+          Items="@Entries"
+          Virtualize="@true"
+          GroupBy="@_groupDefinition"
+          GroupHeaderStyle="background-color:var(--mud-palette-background-grey)"
+          GroupFooterClass="mb-4"
+          Dense="true"
+          MultiSelection="_multiSelect">
+    <ColGroup>
+        @if (_multiSelect)
+        {
+            <col style="width: 60px;" />
+        }
+        @if (_groupDefinition.Expandable)
+        {
+            <col style="width: 60px;" />
+        }
+        <col />
+    </ColGroup>
+    <HeaderContent>
+        <MudTh>URL</MudTh>
+        <MudTh>Operation Name</MudTh>
+    </HeaderContent>
+    <GroupHeaderTemplate>
+        <MudTh Class="mud-table-cell-custom-group" colspan="5">@($"{context.GroupName}: {context.Key}")</MudTh>
+        </GroupHeaderTemplate>
+        <RowTemplate>
+            <MudTd DataLabel="URL">@context.request.url</MudTd>
+            <MudTd DataLabel="OperationName">@context.request?.postData?.text?.Take(50)</MudTd>
+        </RowTemplate>
+    </MudTable>
+
+
+    @code {
+    private bool _multiSelect = true;
+    private TableGroupDefinition<Entries> _groupDefinition = new()
+        {
+            GroupName = "Query",
+            Indentation = false,
+            Expandable = false,
+            Selector = (e) => e.request.url
+        };
+
+    private IEnumerable<Entries> Entries = new List<Entries>();
+
+    public async void OpenFileAsync()
+    {
+        var customFileType = new FilePickerFileType(
+                new Dictionary<DevicePlatform, IEnumerable<string>>
+                    {
+                    { DevicePlatform.iOS, new[] { "har" } }, // or general UTType values
+                    { DevicePlatform.Android, new[] { "har" } },
+                    { DevicePlatform.WinUI, new[] { "har" } },
+                    { DevicePlatform.Tizen, new[] { "har" } },
+                    { DevicePlatform.macOS, new[] { "har" } }, // or general UTType values
+                    });
+
+        PickOptions options = new()
+            {
+                PickerTitle = "Please select a comic file",
+                FileTypes = customFileType,
+            };
+
+        var result = await FilePicker.Default.PickAsync(options);
+        if(result == null)
+        {
+            return;
+        }
+        try
+        {
+            using (var fileStream = await result.OpenReadAsync())
+            {
+                using (StreamReader sr = new(fileStream))
+                {
+                    var harFile = JsonSerializer.Deserialize<RootObject>(sr.ReadToEnd());
+                    Entries = harFile.log.entries;
+                    StateHasChanged();
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Exception thrown: {ex.Message}");
+        }
+    }
+}
