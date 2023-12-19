@@ -16,9 +16,9 @@ namespace HARbinger.Logic
         {
             mocksDirectory ??= _mocksDirectory;
             foreach (var response in mock.Responses)
-                await File.WriteAllLinesAsync(
+                await File.WriteAllTextAsync(
                     $"{mocksDirectory}{Path.DirectorySeparatorChar}{_mocksDirectoryByType[response.Type]}{Path.DirectorySeparatorChar}{mock.Name.Replace(" ", string.Empty).ToLowerInvariant()}.json",
-                    response.Contents).ConfigureAwait(false);
+                    $"{{\n  \"orchestratedResponses\": [{string.Join(",\n", response.Contents)}]\n}}").ConfigureAwait(false);
         }
     }
 }
