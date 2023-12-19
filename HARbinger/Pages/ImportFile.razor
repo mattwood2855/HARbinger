@@ -1,0 +1,91 @@
+﻿@page "/"
+@page "/import-file"
+@using System.Text.Json;
+@using HARbinger.Models;
+@using HARbinger.Services;
+
+@inject NavigationManager NavigationManager
+@inject ISnackbar Snackbar
+
+<style>
+    .fullscreen-container {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        height: 100vh; /* Full viewport height */
+        width: 100vw; /* Full viewport width */
+    }
+</style>
+
+<div class="fullscreen-container">
+    <MudStack Style="width: 50%">       
+        <MudFileUpload T="IReadOnlyList<IBrowserFile>"
+                        OnFilesChanged="OnInputFileChanged"
+                        Hidden="@false"
+                        InputClass="absolute mud-width-full mud-height-full overflow-hidden z-20"
+                        InputStyle="opacity:0"
+         @ondragenter="@SetDragClass"
+         @ondragleave="@ClearDragClass"
+         @ondragend="@ClearDragClass">
+            <ButtonTemplate>
+                <MudPaper 
+                    Height="300px"
+                    Outlined="true"
+                    Class="@_dragClass">
+                    <MudIcon Icon="@Icons.Material.Filled.CloudUpload"></MudIcon>
+                        <MudText Typo="Typo.h6">
+                         Drag and drop files here or click
+                     </MudText>
+                </MudPaper>            
+            </ButtonTemplate>
+        </MudFileUpload>
+    </MudStack>
+    <MudOverlay Visible="_isProcessing" DarkBackground="true" Absolute="true" ZIndex="9999">
+        <MudProgressCircular Class="ms-n1" Size="Size.Large" Indeterminate="true" />
+    </MudOverlay>
+</div>
+
+@code {
+    private bool _isProcessing;
+    private const string DefaultDragClass = "relative rounded-lg border-2 border-dashed pa-4 mt-4 mud-width-full mud-height-full z-10 d-flex justify-center align-content-center flex-grow-1 gap-4";
+    private string _dragClass = DefaultDragClass;
+
+    private async Task Clear()
+    {
+        ClearDragClass();
+        await Task.Delay(100);
+    }
+
+    private async void OnInputFileChanged(InputFileChangeEventArgs e)
+    {
+        _isProcessing = true;
+        ClearDragClass();
+        if(e.File == null)
+        {
+            _isProcessing = false;
+            return;
+        }
+        var errors = await HarFileService.Process(e.File);
+        if (errors.Any())
+        {
+            Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopCenter;
+            Snackbar.Add("Failed to process HAR file", Severity.Error);
+            foreach(var error in errors)
+            {
+                Snackbar.Add(error, Severity.Info);
+            }
+        }
+        else
+        {
+            NavigationManager.NavigateTo("/session-details");
+        }
+        
+        _isProcessing = false;
+    }
+
+    private void SetDragClass()
+        => _dragClass = $"{DefaultDragClass} mud-border-primary";
+
+    private void ClearDragClass()
+        => _dragClass = DefaultDragClass;
+}

@@ -1,16 +1,22 @@
 ﻿@page "/export-mock-user"
 
-<h1>Counter</h1>
+<MudPaper Elevation="25">
+    <MudToolBar>
+        <MudButton 
+            OnClick="Back"
+            Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.NavigateBefore" Color="Color.Default">Back</MudButton>
+        <MudSpacer />
+        <MudText>Export User</MudText>
+        <MudSpacer />
+        <MudButton Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.NavigateNext" Color="Color.Primary">Export</MudButton>
+    </MudToolBar>
+</MudPaper>
 
-<p role="status">Current count: @currentCount</p>
-
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+@inject NavigationManager NavigationManager
 
 @code {
-    private int currentCount = 0;
-
-    private void IncrementCount()
+    private void Back()
     {
-        currentCount++;
+        NavigationManager.NavigateTo("/repo-settings");
     }
 }

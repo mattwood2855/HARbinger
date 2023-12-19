@@ -11,8 +11,22 @@ namespace HARbinger.Services
 
         public static RootObject HarData { get; set; }
 
-        public static async Task<bool> Process(IBrowserFile browserFile)
+        public static async Task<List<string>> Process(IBrowserFile browserFile)
         {
+            var errors = new List<string>();
+
+            if (browserFile == null)
+            {
+                errors.Add("No file selected.");
+                return errors;
+            }
+
+            if (browserFile.Size > MaxFileSize)
+            {
+                errors.Add("File is too large.");
+                return errors;
+            }
+
             try
             {
                 await using FileStream fileStream = new(TempFilePath, FileMode.Create);
@@ -24,11 +38,12 @@ namespace HARbinger.Services
                 {
                     HarData = JsonSerializer.Deserialize<RootObject>(sr.ReadToEnd());
                 }
-                return true;
+                return errors;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return false;
+                errors.Add(ex.Message);
+                return errors;
             }
         }
     }

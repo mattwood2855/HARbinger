@@ -2,6 +2,7 @@
 
 @using System.Text.Json;
 @using HARbinger.Models;
+@using HARbinger.Services;
 
 @inject ISnackbar Snackbar
 
@@ -15,7 +16,17 @@
         text-align: right;
     }
 </style>
-
+<MudPaper Elevation="25">
+    <MudToolBar>
+        <MudButton 
+            OnClick="Back"
+            Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.NavigateBefore" Color="Color.Default">Back</MudButton>
+        <MudSpacer />
+        <MudText>Select Content To Export</MudText>
+        <MudSpacer />
+        <MudButton Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.NavigateNext" Color="Color.Primary">Next</MudButton>
+    </MudToolBar>
+</MudPaper>
 <MudPaper Class="d-flex justify-center flex-grow1 gap-4">
     <MudTable Hover="true" Breakpoint="Breakpoint.Sm" Height="500px" FixedHeader="true"
               Items="@Entries"
@@ -50,91 +61,21 @@
         </MudTable>
 </MudPaper>
 
+    @inject NavigationManager NavigationManager
     @code {
-    private bool _multiSelect = true;
-    private TableGroupDefinition<Entries> _groupDefinition = new()
-        {
-            GroupName = "Query",
-            Indentation = false,
-            Expandable = false,
-            Selector = (e) => e.request.url
-        };
-
-    private IEnumerable<Entries> Entries = new List<Entries>();
-
-    public async void OpenFileAsync()
-    {
-        var customFileType = new FilePickerFileType(
-                new Dictionary<DevicePlatform, IEnumerable<string>>
-                    {
-                    { DevicePlatform.iOS, new[] { "har" } }, // or general UTType values
-                    { DevicePlatform.Android, new[] { "har" } },
-                    { DevicePlatform.WinUI, new[] { "har" } },
-                    { DevicePlatform.Tizen, new[] { "har" } },
-                    { DevicePlatform.macOS, new[] { "har" } }, // or general UTType values
-                    });
-
-        PickOptions options = new()
+        private bool _multiSelect = true;
+        private TableGroupDefinition<Entries> _groupDefinition = new()
             {
-                PickerTitle = "Please select a comic file",
-                FileTypes = customFileType,
+                GroupName = "Query",
+                Indentation = false,
+                Expandable = false,
+                Selector = (e) => e.request.url
             };
 
-        var result = await FilePicker.Default.PickAsync(options);
-        if(result == null)
+        private IEnumerable<Entries> Entries = HarFileService.HarData?.log?.entries;
+
+        private void Back()
         {
-            return;
-        }
-        try
-        {
-            using (var fileStream = await result.OpenReadAsync())
-            {
-                using (StreamReader sr = new(fileStream))
-                {
-                    var harFile = JsonSerializer.Deserialize<RootObject>(sr.ReadToEnd());
-                    Entries = harFile.log.entries;
-                    StateHasChanged();
-                }
-            }
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"Exception thrown: {ex.Message}");
+            NavigationManager.NavigateTo("/import-file");
         }
     }
-
-#nullable enable
-    private const string DefaultDragClass = "relative rounded-lg border-2 border-dashed pa-4 mt-4 mud-width-full mud-height-full z-10";
-    private string _dragClass = DefaultDragClass;
-    private readonly List<string> _fileNames = new();
-
-    private async Task Clear()
-    {
-        _fileNames.Clear();
-        ClearDragClass();
-        await Task.Delay(100);
-    }
-
-    private void OnInputFileChanged(InputFileChangeEventArgs e)
-    {
-        ClearDragClass();
-        var files = e.GetMultipleFiles();
-        foreach (var file in files)
-        {
-            _fileNames.Add(file.Name);
-        }
-    }
-
-    private void Upload()
-    {
-        // Upload the files here
-        Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopCenter;
-        Snackbar.Add("TODO: Upload your files!");
-    }
-
-    private void SetDragClass()
-        => _dragClass = $"{DefaultDragClass} mud-border-primary";
-
-    private void ClearDragClass()
-        => _dragClass = DefaultDragClass;
-}
