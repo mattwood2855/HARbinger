@@ -2,7 +2,7 @@
 
 namespace HARbinger.Models
 {
-    public partial class GraphRequest
+    public class GraphRequest
     {
         [JsonPropertyName("operationName")]
         public string OperationName { get; set; }
