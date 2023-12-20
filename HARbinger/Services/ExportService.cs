@@ -67,40 +67,5 @@ namespace HARbinger.Services
                 progress.Report(report);
             }
         }
-
-        internal static async Task ExportMockAsync(Mock mock, IProgress<ExportProgress> progress, string mocksDirectory = null)
-        {
-            mocksDirectory ??= _mocksDirectory;
-            Directory.CreateDirectory(mocksDirectory);
-            for (var index = 0; index < mock.Responses.Length; index++)
-            {
-                try
-                {
-                    var response = mock.Responses[index];
-                    
-                    var path = $"{mocksDirectory}{Path.DirectorySeparatorChar}{_mocksDirectoryByType[response.Type]}{Path.DirectorySeparatorChar}";
-                    Directory.CreateDirectory(path);
-                    await File.WriteAllTextAsync(
-                        $"{path}{mock.Name.Replace(" ", string.Empty).ToLowerInvariant()}.json",
-                        $"{{\n  \"orchestratedResponses\": [{string.Join(",\n", response.Contents)}]\n}}").ConfigureAwait(false);
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex);
-                }
-                finally
-                {
-                    if(progress != null)
-                    {
-                        var report = new ExportProgress
-                        {
-                            CurrentRequest = mock.Name,
-                            PercentComplete = 1
-                        };
-                        progress.Report(report);
-                    }
-                }
-            }
-        }
     }
 }

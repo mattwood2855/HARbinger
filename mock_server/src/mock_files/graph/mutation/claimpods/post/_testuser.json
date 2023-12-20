@@ -1,0 +1,28 @@
+{
+  "orchestratedResponses": [
+    {
+      "data": {
+        "claimPods": {
+          "existingRouterDeviceId": "nr3R-cmuTklGXLA9Yq2FpQ,,",
+          "podClaimResults": [
+            {
+              "deviceId": "XEFbGMG6YHxDvX9YOCZ2Ig,,",
+              "outcome": "NEWLY_CLAIMED",
+              "serialNumber": "SA7E900EF7CHTRP",
+              "success": true,
+              "__typename": "PodClaimResult"
+            },
+            {
+              "deviceId": "NlawY03Ml81jPw3UY25LXA,,",
+              "outcome": "NEWLY_CLAIMED",
+              "serialNumber": "SA7E900EBBCHTRP",
+              "success": true,
+              "__typename": "PodClaimResult"
+            }
+          ],
+          "__typename": "ClaimPodsPayload"
+        }
+      }
+    }
+  ]
+}

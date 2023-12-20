@@ -1,0 +1,21 @@
+{
+  "orchestratedResponses": [
+    {
+      "data": {
+        "messagingSubscription": {
+          "categories": [
+            "APPOINTMENTS",
+            "BILLING",
+            "CAMPAIGN_MARKETING",
+            "CAMPAIGN_SPECMOBILE",
+            "DEVICE_CONNECT",
+            "IVA_CHAT",
+            "OUTAGE_NOTIFICATION",
+            "OUTAGE_RESOLUTION"
+          ],
+          "__typename": "MessagingSubscription"
+        }
+      }
+    }
+  ]
+}

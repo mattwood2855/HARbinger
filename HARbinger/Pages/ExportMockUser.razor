@@ -34,11 +34,13 @@
     <MudPaper Style="height: 300px; width: 50%; margin-top:16px; padding: 12px;">
         <MudGrid>
             <MudItem xs="12">
-                <MudTextField @bind-Value="_mockUsername"
-                              T="string"
-                              DebounceInterval="500"
-                              Label="Mock Username"
-                              OnDebounceIntervalElapsed="OnUsernameUpdated" />
+                <MudAutocomplete T="string"
+                                 ValueChanged="OnUsernameValueChanged"
+                                 AdornmentColor="Color.Primary"
+                                 AdornmentIcon="@Icons.Material.Filled.Person"
+                                 Label="Mock Username"
+                                 SearchFunc="@SearchForUsername"
+                                 ResetValueOnEmptyText="true" CoerceValue="true" />
             </MudItem>
             
         </MudGrid>
@@ -52,6 +54,13 @@
 @code {
     private bool _exportDisabled = true;
     private string _mockUsername = string.Empty;
+    private List<string> _usernames = new List<string>();
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        _usernames = Preferences.Default.Get<string>("MockUsers", "").Split(';').ToList();
+    }
 
     private void Back()
     {
@@ -80,6 +89,14 @@
             Snackbar.Add(ex.Message, Severity.Error);
             Console.WriteLine(ex.Message);
         }
+        finally
+        {
+            if (!_usernames.Contains(_mockUsername))
+            {
+                _usernames.Add(_mockUsername);
+                Preferences.Default.Set("MockUsers", string.Join(";", _usernames));
+            }
+        }
     }
 
     private void OnUsernameUpdated()
@@ -92,5 +109,20 @@
         {
             _exportDisabled = true;
         }
+    }
+
+    private void OnUsernameValueChanged(string value)
+    {
+        _mockUsername = value;
+        OnUsernameUpdated();
+    }
+
+    private async Task<IEnumerable<string>> SearchForUsername(string value)
+    {
+        // if text is null or empty, show complete list
+        if (string.IsNullOrEmpty(value))
+            return _usernames;
+
+        return _usernames.Where(x => x.Contains(value, StringComparison.InvariantCultureIgnoreCase));
     }
 }

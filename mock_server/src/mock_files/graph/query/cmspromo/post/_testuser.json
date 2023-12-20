@@ -1,0 +1,106 @@
+{
+  "orchestratedResponses": [
+    {
+      "data": {
+        "content": {
+          "promo": {
+            "type": "Promo",
+            "id": "201391",
+            "title": "Bring Home High Speed Internet",
+            "body": "Get fast Spectrum Internet\u003Csup\u003E\u00AE\u003C/sup\u003E with speeds up to 1 Gig \u0026amp; power all your devices with no data caps. (wireless speeds may vary)",
+            "link": {
+              "text": "Call (844) 850-9392",
+              "uri": "tel:8448509392",
+              "newTab": false,
+              "ivaPointOfNeed": null,
+              "ivaLaunchPoint": null,
+              "__typename": "CmsLink"
+            },
+            "altText": null,
+            "disclaimerText": "\u003Ca href=\u0022/disclaimers/resi-disclaimer-lob-internet\u0022\u003ESee offer details\u003C/a\u003E",
+            "desktopImageUrl": "https://drupal-cms.uat-spectrum.net/sites/default/files/2023-06/AuthHP_InLinePromo_June_AddInternet_0614_D.jpg",
+            "mobileImageUrl": "https://drupal-cms.uat-spectrum.net/sites/default/files/2023-06/AuthHP_InLinePromo_June_AddInternet_0614_M.jpg",
+            "msaImageUrl": null,
+            "cover": false,
+            "useCard": true,
+            "ctaStyle": "PRIMARY",
+            "imagePlacement": "LEFT",
+            "singleImageMode": false,
+            "imageUrl": null,
+            "experimentData": null,
+            "__typename": "ContentPromo"
+          },
+          "__typename": "CmsContent"
+        }
+      }
+    },
+    {
+      "data": {
+        "content": {
+          "promo": {
+            "type": "Promo",
+            "id": "201411",
+            "title": "Thanks for Being a Valued Spectrum Employee!",
+            "body": "Get fast Spectrum Internet\u003Csup\u003E\u00AE\u003C/sup\u003E with speeds up to 1 Gig. Power all your connected devices with no data caps. Call to get your best deal. (wireless speeds may vary)",
+            "link": {
+              "text": "See My Deals",
+              "uri": "https://www.spectrum.com/mobile/products/phones?cmp=sspp_res_gm_ahpr_smo_EmployeesOnly_071223\u0026useSso=true",
+              "newTab": false,
+              "ivaPointOfNeed": null,
+              "ivaLaunchPoint": null,
+              "__typename": "CmsLink"
+            },
+            "altText": null,
+            "disclaimerText": "Limited time offer; subject to change; valid to qualified Spectrum employees. Services are subject to all applicable service terms and conditions, subject to change. Services not available in all areas. Restrictions apply. Auto Pay required. UNLIMITED: Rates subject to change. Smartwatch does not qualify as a line. Reduced speeds after 30 GB of usage per line.",
+            "desktopImageUrl": "https://drupal-cms.uat-spectrum.net/sites/default/files/2023-06/AuthHP_Employee_Mobile_Offer_D.png",
+            "mobileImageUrl": "https://drupal-cms.uat-spectrum.net/sites/default/files/2023-06/AuthHP_Mobile_Employee_Mobile_Offer_M.png",
+            "msaImageUrl": null,
+            "cover": false,
+            "useCard": true,
+            "ctaStyle": "PRIMARY",
+            "imagePlacement": "LEFT",
+            "singleImageMode": false,
+            "imageUrl": null,
+            "experimentData": null,
+            "__typename": "ContentPromo"
+          },
+          "__typename": "CmsContent"
+        }
+      }
+    },
+    {
+      "data": {
+        "content": {
+          "promo": {
+            "type": "Promo",
+            "id": "201401",
+            "title": "Explore the Latest 5G Phones",
+            "body": "Trade in your current device to get the best value for your phone PLUS a $100 bonus to use toward your upgrade.",
+            "link": {
+              "text": "Shop Phones",
+              "uri": "https://www.spectrum.com/mobile/products/phones",
+              "newTab": false,
+              "ivaPointOfNeed": null,
+              "ivaLaunchPoint": null,
+              "__typename": "CmsLink"
+            },
+            "altText": null,
+            "disclaimerText": null,
+            "desktopImageUrl": "https://drupal-cms.uat-spectrum.net/sites/default/files/2023-05/AuthHP_Menu_D.png",
+            "mobileImageUrl": "https://drupal-cms.uat-spectrum.net/sites/default/files/2023-05/AuthHP_menu_M.png",
+            "msaImageUrl": null,
+            "cover": false,
+            "useCard": true,
+            "ctaStyle": "PRIMARY",
+            "imagePlacement": "LEFT",
+            "singleImageMode": false,
+            "imageUrl": null,
+            "experimentData": null,
+            "__typename": "ContentPromo"
+          },
+          "__typename": "CmsContent"
+        }
+      }
+    }
+  ]
+}

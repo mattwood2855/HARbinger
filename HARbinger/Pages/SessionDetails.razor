@@ -22,18 +22,18 @@
             OnClick="Back"
             Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.NavigateBefore" Color="Color.Default">Back</MudButton>
         <MudSpacer />
-        <MudText>Select Content To Export</MudText>
+        <MudText>Content To Export</MudText>
         <MudSpacer />
         <MudButton 
             OnClick="Next"
             Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.NavigateNext" Color="Color.Primary">Next</MudButton>
     </MudToolBar>
 </MudPaper>
-<MudPaper Class="d-flex justify-center flex-grow1 gap-4">
-    <MudTable Hover="true" Breakpoint="Breakpoint.Sm" Height="500px" FixedHeader="true"
+<MudPaper Class="d-flex justify-center flex-grow1 gap-4" Style="width: 100%;">
+    <MudTable Hover="true" 
+              Breakpoint="Breakpoint.Xs" Height="500px" FixedHeader="true" Style="width: 100%;"
               Items="@Entries"
               Virtualize="@true"
-              GroupBy="@_groupDefinition"
               GroupHeaderStyle="background-color:var(--mud-palette-background-grey)"
               GroupFooterClass="mb-4"
               Dense="true"
@@ -41,40 +41,37 @@
         <ColGroup>
             @if (_multiSelect)
             {
-                <col style="width: 60px;" />
+                <col style="width: 40px;" />
             }
-            @if (_groupDefinition.Expandable)
-            {
-                <col style="width: 60px;" />
-            }
+            <col style="width: 200px;" />
             <col />
+            <col style="width: 100px;" />
         </ColGroup>
         <HeaderContent>
-            <MudTh>URL</MudTh>
+            <MudTh>Operation Type</MudTh>
             <MudTh>Operation Name</MudTh>
+            <MudTh>Number Of Responses</MudTh>
         </HeaderContent>
-        <GroupHeaderTemplate>
-            <MudTh Class="mud-table-cell-custom-group" colspan="5">@($"{context.GroupName}: {context.Key}")</MudTh>
-            </GroupHeaderTemplate>
-            <RowTemplate>
-                <MudTd DataLabel="URL">@context.request.url</MudTd>
-                <MudTd DataLabel="OperationName">@context.request?.postData?.text?.Take(50)</MudTd>
-            </RowTemplate>
-        </MudTable>
+        <RowTemplate>
+            <MudTd DataLabel="URL">@context.OperationType</MudTd>
+            <MudTd DataLabel="OperationName">@context.OperationName</MudTd>
+            <MudTd DataLabel="NumberOfResponses">@context.Responses.Count</MudTd>
+        </RowTemplate>
+    </MudTable>
 </MudPaper>
 
     @inject NavigationManager NavigationManager
     @code {
-        private bool _multiSelect = true;
-        private TableGroupDefinition<Entries> _groupDefinition = new()
+        private bool _multiSelect = false;
+    private TableGroupDefinition<GraphEntryModel> _groupDefinition = new()
             {
                 GroupName = "Query",
                 Indentation = false,
                 Expandable = false,
-                Selector = (e) => e.request.url
+                Selector = (e) => e.OperationName
             };
 
-        private IEnumerable<Entries> Entries = HarFileService.HarData?.log?.entries;
+        private IEnumerable<GraphEntryModel> Entries = HarFileService.GetAllGraphEntries();
 
         private void Back()
         {

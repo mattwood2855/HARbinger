@@ -1,0 +1,18 @@
+{
+  "orchestratedResponses": [
+    {
+      "data": {
+        "viewer": {
+          "account": {
+            "selfInstallState": {
+              "autoActivationEligibility": "ELIGIBLE",
+              "__typename": "SelfInstallState"
+            },
+            "__typename": "Account"
+          },
+          "__typename": "Identity"
+        }
+      }
+    }
+  ]
+}

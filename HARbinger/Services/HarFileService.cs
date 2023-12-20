@@ -29,6 +29,21 @@ namespace HARbinger.Services
             return entryModels;
         }
 
+        public static IEnumerable<IGrouping<string, Entries>> GetGroupedGraphEntries()
+        {
+            // Get all entries that make calls to /graph or /graphauxiliary
+            var graphEntries = HarData.log.entries
+                    .Where(entry =>
+                           (entry.request?.url?.EndsWith("graph") == true || entry.request?.url?.EndsWith("graphauxiliary") == true) &&
+                           entry.request?.postData?.text != null);
+
+            // Group entries by operation name
+            var groupedGraphEntries = graphEntries
+                    .GroupBy(graphEntry => JsonSerializer.Deserialize<GraphRequest>(graphEntry.request.postData.text).OperationName.ToLower());
+
+            return groupedGraphEntries;
+        }
+
         public static List<string> GetGraphRequests()
         {
             var graphRequests = 

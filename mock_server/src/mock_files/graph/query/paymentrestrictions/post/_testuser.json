@@ -1,0 +1,55 @@
+{
+  "orchestratedResponses": [
+    {
+      "data": {
+        "viewer": {
+          "account": {
+            "customerPayment": {
+              "paymentRestrictions": {
+                "paymentRestrictions": [],
+                "__typename": "PaymentRestrictionsPayload"
+              },
+              "__typename": "CustomerPayment"
+            },
+            "__typename": "Account"
+          },
+          "__typename": "Identity"
+        }
+      }
+    },
+    {
+      "data": {
+        "viewer": {
+          "account": {
+            "customerPayment": {
+              "paymentRestrictions": {
+                "paymentRestrictions": [],
+                "__typename": "PaymentRestrictionsPayload"
+              },
+              "__typename": "CustomerPayment"
+            },
+            "__typename": "Account"
+          },
+          "__typename": "Identity"
+        }
+      }
+    },
+    {
+      "data": {
+        "viewer": {
+          "account": {
+            "customerPayment": {
+              "paymentRestrictions": {
+                "paymentRestrictions": [],
+                "__typename": "PaymentRestrictionsPayload"
+              },
+              "__typename": "CustomerPayment"
+            },
+            "__typename": "Account"
+          },
+          "__typename": "Identity"
+        }
+      }
+    }
+  ]
+}

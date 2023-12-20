@@ -1,0 +1,22 @@
+{
+  "orchestratedResponses": [
+    {
+      "data": {
+        "updateEquipmentNickname": {
+          "nickname": "Basement_OFC",
+          "equipmentId": "XEFbGMG6YHxDvX9YOCZ2Ig,,",
+          "__typename": "UpdateEquipmentNicknamePayload"
+        }
+      }
+    },
+    {
+      "data": {
+        "updateEquipmentNickname": {
+          "nickname": "Living_Room",
+          "equipmentId": "NlawY03Ml81jPw3UY25LXA,,",
+          "__typename": "UpdateEquipmentNicknamePayload"
+        }
+      }
+    }
+  ]
+}

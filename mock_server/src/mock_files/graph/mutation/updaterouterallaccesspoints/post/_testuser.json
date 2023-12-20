@@ -1,0 +1,22 @@
+{
+  "orchestratedResponses": [
+    {
+      "data": {
+        "updateRouterAllAccessPoints": {
+          "accessPoints": [
+            {
+              "id": "MNrQ_A8CaYRmSC5dE53FX11Oito9HLe0QT_dk7Ssv1s,",
+              "ssid": "basement_01",
+              "securityMode": null,
+              "password": "basement_01",
+              "radios": [],
+              "__typename": "AccessPoint"
+            }
+          ],
+          "equipmentId": "nr3R-cmuTklGXLA9Yq2FpQ,,",
+          "__typename": "UpdateRouterAccessPointsPayload"
+        }
+      }
+    }
+  ]
+}

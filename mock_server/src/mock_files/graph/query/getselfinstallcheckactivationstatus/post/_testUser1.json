@@ -1,0 +1,1644 @@
+{
+  "orchestratedResponses": [
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "LQtFKhuAQOJ8Idel46na6g,,",
+                  "status": "IN_PROGRESS",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    },
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "provisioningStatus": [
+                {
+                  "deviceId": "nr3R-cmuTklGXLA9Yq2FpQ,,",
+                  "status": "COMPLETE",
+                  "__typename": "DeviceProvisioningStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    }
+  ]
+}
