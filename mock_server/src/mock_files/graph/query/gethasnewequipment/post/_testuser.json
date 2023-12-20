@@ -1,0 +1,19 @@
+{
+  "orchestratedResponses": [
+    {
+      "data": {
+        "viewer": {
+          "account": {
+            "selfInstallState": {
+              "hasNewEquipment": true,
+              "selfInstallType": "NEW",
+              "__typename": "SelfInstallState"
+            },
+            "__typename": "Account"
+          },
+          "__typename": "Identity"
+        }
+      }
+    }
+  ]
+}

@@ -63,7 +63,7 @@
         var progress = new Progress<ExportProgress>();
         try
         {
-            ExportService.ExportAllMocks(_mockUsername, progress);
+            ExportService.ExportAllGraphMocks(_mockUsername, progress);
             var options = new DialogOptions
                 {
                     CloseOnEscapeKey = false,

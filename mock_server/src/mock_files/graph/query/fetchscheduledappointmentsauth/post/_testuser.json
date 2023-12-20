@@ -1,0 +1,19 @@
+{
+  "orchestratedResponses": [
+    {
+      "data": {
+        "viewer": {
+          "account": {
+            "scheduledAppointments": {
+              "sroAlert": null,
+              "appointments": [],
+              "__typename": "ServiceapptsResponse"
+            },
+            "__typename": "Account"
+          },
+          "__typename": "Identity"
+        }
+      }
+    }
+  ]
+}

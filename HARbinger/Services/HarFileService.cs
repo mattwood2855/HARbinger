@@ -11,12 +11,31 @@ namespace HARbinger.Services
 
         public static RootObject HarData { get; set; }
 
+        public static IEnumerable<GraphEntryModel> GetAllGraphEntries()
+        {
+            // Get all entries that make calls to /graph or /graphauxiliary
+            var graphEntries = HarData.log.entries
+                    .Where(entry =>
+                           (entry.request?.url?.EndsWith("graph") == true || entry.request?.url?.EndsWith("graphauxiliary") == true) &&
+                           entry.request?.postData?.text != null);
+
+            // Group entries by operation name
+            var groupedGraphEntries = graphEntries
+                    .GroupBy(graphEntry => JsonSerializer.Deserialize<GraphRequest>(graphEntry.request.postData.text).OperationName.ToLower());
+
+            var entryModels = groupedGraphEntries.Select(group =>
+                           new GraphEntryModel(group));
+
+            return entryModels;
+        }
+
         public static List<string> GetGraphRequests()
         {
-            var graphRequests = HarData.log.entries.Where(entry =>
-                entry.request?.url?.Contains("graph") == true
-                    && entry.request?.postData?.text != null).Select(entry =>
-                JsonSerializer.Deserialize<GraphRequest>(entry.request.postData.text)).ToArray();
+            var graphRequests = 
+                HarData.log.entries
+                    .Where(entry => entry.request?.url?.Contains("graph") == true && 
+                           entry.request?.postData?.text != null)
+                    .Select(entry => JsonSerializer.Deserialize<GraphRequest>(entry.request.postData.text)).ToArray();
             return graphRequests.GroupBy(graphRequest =>
                 graphRequest.OperationName).Select(group =>
                 group.First().OperationName).OrderBy(operationName =>

@@ -17,6 +17,9 @@
             OnClick="Cancel">Cancel</MudButton>
     </DialogActions>
 </MudDialog>
+
+@inject ISnackbar Snackbar
+
 @code {
     [CascadingParameter] MudDialogInstance MudDialog { get; set; }
 
@@ -34,6 +37,12 @@
             _currentFile = progress.CurrentRequest;
             _progressValue = progress.PercentComplete;
             StateHasChanged();
+
+            if(progress.PercentComplete == 1)
+            {
+                Snackbar.Add("Export Complete", Severity.Success);
+                MudDialog.Close(DialogResult.Ok(true));
+            }
         };
         return base.OnParametersSetAsync();
     }

@@ -1,0 +1,12 @@
+{
+  "orchestratedResponses": [
+    {
+      "data": {
+        "viewer": {
+          "cpniCompliance": "NON_COMPLIANT",
+          "__typename": "Identity"
+        }
+      }
+    }
+  ]
+}

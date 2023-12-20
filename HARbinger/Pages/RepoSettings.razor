@@ -33,11 +33,13 @@
     <MudPaper Class="" Style="width: 50%; margin-top:16px; padding: 12px;">
         <MudGrid>
             <MudItem xs="12">
-                <MudTextField @bind-Value="RepoDirectory"
-                              T="string"
-                              DebounceInterval="500"
-                              Label="Repo Directory"
-                              OnDebounceIntervalElapsed="OnRepoDirectoryUpdated" />
+                <MudAutocomplete T="string"
+                                 ValueChanged="OnRepoDirectoryValueChanged"
+                                 AdornmentColor="Color.Primary"
+                                 AdornmentIcon="@Icons.Material.Filled.Folder"
+                                 Label="Repo Directory" 
+                                 SearchFunc="@SearchForRepoDirectory"
+                                 ResetValueOnEmptyText="true" CoerceValue="true"/>
             </MudItem>
             <MudItem xs="12">
                 <MudTextField @bind-Value="_repoName"
@@ -49,7 +51,7 @@
             <MudItem xs="12">
                 <MudTextField @bind-Value="_branchName"
                               Disabled="_branchDisabled"
-                              Label="Repo" 
+                              Label="Branch" 
                               ReadOnly="true" 
                               Variant="Variant.Text" />
             </MudItem>
@@ -63,10 +65,17 @@
     private string _branchName = string.Empty;  
     private bool _branchDisabled = true;
     private MudForm _form;
+    private List<string> _repoDirectories = new List<string>();
     public string RepoDirectory { get; set; } = string.Empty;
     private string _repoName = string.Empty;
     private bool _repoNameDisabled = true;
-    
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        _repoDirectories = Preferences.Default.Get<string>("RepoDirectories", "").Split(';').ToList();
+    }
+
     private void Back()
     {
         NavigationManager.NavigateTo("/session-details");
@@ -88,10 +97,34 @@
             _branchDisabled = true;
             return;
         }
-        _repoName = repoData.Name;
-        _branchName = repoData.Branch;
+        else
+        {
+            _repoName = repoData.Name;
+            _branchName = repoData.Branch;
 
-        _repoNameDisabled = false;
-        _branchDisabled = false;
+            _repoNameDisabled = false;
+            _branchDisabled = false;
+
+            if(!_repoDirectories.Contains(RepoDirectory))
+            {
+                _repoDirectories.Add(RepoDirectory);
+                Preferences.Default.Set("RepoDirectories", string.Join(";", _repoDirectories));
+            }
+        }
+    }
+
+    private void OnRepoDirectoryValueChanged(string value)
+    {
+        RepoDirectory = value;
+        OnRepoDirectoryUpdated();
+    }
+
+    private async Task<IEnumerable<string>> SearchForRepoDirectory(string value)
+    {
+        // if text is null or empty, show complete list
+        if (string.IsNullOrEmpty(value))
+            return _repoDirectories;
+
+        return _repoDirectories.Where(x => x.Contains(value, StringComparison.InvariantCultureIgnoreCase));
     }
 }

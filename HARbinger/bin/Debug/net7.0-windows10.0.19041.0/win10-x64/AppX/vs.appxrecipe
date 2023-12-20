@@ -29,29 +29,29 @@
     <AppXManifest Include="D:\Repositories\HARbinger\HARbinger\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-12-19T23:04:19.563</Modified>
+      <Modified>2023-12-20T18:15:11.348</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Repositories\HARbinger\HARbinger\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-12-19T23:04:19.433</Modified>
+      <Modified>2023-12-20T18:13:24.607</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Repositories\HARbinger\HARbinger\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\HARbinger.runtimeconfig.json">
       <PackagePath>HARbinger.runtimeconfig.json</PackagePath>
-      <Modified>2023-12-19T20:06:33.281</Modified>
+      <Modified>2023-12-20T16:24:30.416</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Repositories\HARbinger\HARbinger\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\HARbinger.dll">
       <PackagePath>HARbinger.dll</PackagePath>
-      <Modified>2023-12-19T23:04:19.060</Modified>
+      <Modified>2023-12-20T18:15:10.868</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Repositories\HARbinger\HARbinger\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>HARbinger.exe</PackagePath>
-      <Modified>2023-12-19T23:04:19.064</Modified>
+      <Modified>2023-12-20T18:15:10.872</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Repositories\HARbinger\HARbinger\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\HARbinger.deps.json">
       <PackagePath>HARbinger.deps.json</PackagePath>
-      <Modified>2023-12-19T22:08:25.832</Modified>
+      <Modified>2023-12-20T16:24:30.387</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.11\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>

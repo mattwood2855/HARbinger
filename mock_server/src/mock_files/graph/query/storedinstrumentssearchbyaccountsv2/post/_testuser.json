@@ -1,0 +1,15 @@
+{
+  "orchestratedResponses": [
+    {
+      "data": {
+        "viewer": {
+          "account": {
+            "searchByAccountsV2": [],
+            "__typename": "Account"
+          },
+          "__typename": "Identity"
+        }
+      }
+    }
+  ]
+}

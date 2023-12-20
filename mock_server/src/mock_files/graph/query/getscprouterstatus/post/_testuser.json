@@ -1,0 +1,23 @@
+{
+  "orchestratedResponses": [
+    {
+      "data": {
+        "equipment": {
+          "activation": {
+            "equipmentChecks": {
+              "scpRouterStatus": [
+                {
+                  "status": "CONNECTED",
+                  "__typename": "ScpRouterDeviceStatus"
+                }
+              ],
+              "__typename": "EquipmentChecks"
+            },
+            "__typename": "Activation"
+          },
+          "__typename": "EquipmentQuery"
+        }
+      }
+    }
+  ]
+}

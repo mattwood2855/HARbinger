@@ -13,86 +13,86 @@ build_property.EnableTrimAnalyzer = false
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = HARbinger
 build_property.RootNamespace = HARbinger
-build_property.ProjectDir = /Users/mwood.Charter/HARbinger/HARbinger/
+build_property.ProjectDir = D:\Repositories\HARbinger\HARbinger\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/mwood.Charter/HARbinger/HARbinger
+build_property.MSBuildProjectDirectory = D:\Repositories\HARbinger\HARbinger
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/mwood.Charter/HARbinger/HARbinger/App.xaml]
+[D:/Repositories/HARbinger/HARbinger/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = HARbinger.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/mwood.Charter/HARbinger/HARbinger/MainPage.xaml]
+[D:/Repositories/HARbinger/HARbinger/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = HARbinger.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/mwood.Charter/HARbinger/HARbinger/Dialogs/ExportDialog.razor]
+[D:/Repositories/HARbinger/HARbinger/Dialogs/ExportDialog.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
-build_metadata.AdditionalFiles.TargetPath = RGlhbG9ncy9FeHBvcnREaWFsb2cucmF6b3I=
+build_metadata.AdditionalFiles.TargetPath = RGlhbG9nc1xFeHBvcnREaWFsb2cucmF6b3I=
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/mwood.Charter/HARbinger/HARbinger/Main.razor]
+[D:/Repositories/HARbinger/HARbinger/Main.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = TWFpbi5yYXpvcg==
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/mwood.Charter/HARbinger/HARbinger/Pages/ExportMockUser.razor]
+[D:/Repositories/HARbinger/HARbinger/Pages/ExportMockUser.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXhwb3J0TW9ja1VzZXIucmF6b3I=
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhwb3J0TW9ja1VzZXIucmF6b3I=
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/mwood.Charter/HARbinger/HARbinger/Pages/ImportFile.razor]
+[D:/Repositories/HARbinger/HARbinger/Pages/ImportFile.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW1wb3J0RmlsZS5yYXpvcg==
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW1wb3J0RmlsZS5yYXpvcg==
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/mwood.Charter/HARbinger/HARbinger/Pages/RepoSettings.razor]
+[D:/Repositories/HARbinger/HARbinger/Pages/RepoSettings.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVwb1NldHRpbmdzLnJhem9y
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVwb1NldHRpbmdzLnJhem9y
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/mwood.Charter/HARbinger/HARbinger/Pages/SessionDetails.razor]
+[D:/Repositories/HARbinger/HARbinger/Pages/SessionDetails.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2Vzc2lvbkRldGFpbHMucmF6b3I=
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2Vzc2lvbkRldGFpbHMucmF6b3I=
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/mwood.Charter/HARbinger/HARbinger/_Imports.razor]
+[D:/Repositories/HARbinger/HARbinger/_Imports.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/mwood.Charter/HARbinger/HARbinger/Shared/MainLayout.razor]
+[D:/Repositories/HARbinger/HARbinger/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.RelativePath = 
-build_metadata.AdditionalFiles.CssScope = b-xzy17jxssv
+build_metadata.AdditionalFiles.CssScope = b-1y2ersu77r
 
-[/Users/mwood.Charter/HARbinger/HARbinger/Shared/NavMenu.razor]
+[D:/Repositories/HARbinger/HARbinger/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.RelativePath = 
-build_metadata.AdditionalFiles.CssScope = b-lpfxeon71j
+build_metadata.AdditionalFiles.CssScope = b-uofua4j2l1

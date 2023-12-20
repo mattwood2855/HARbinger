@@ -1,0 +1,12 @@
+{
+  "orchestratedResponses": [
+    {
+      "data": {
+        "getShipments": {
+          "shipments": [],
+          "__typename": "GetShipments"
+        }
+      }
+    }
+  ]
+}
