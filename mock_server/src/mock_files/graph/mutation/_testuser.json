@@ -1,3 +1,0 @@
-{
-  "orchestratedResponses": [{"operationName":"UpdateRouterAllAccessPoints","variables":{"input":{"equipmentId":"nr3R-cmuTklGXLA9Yq2FpQ,,","ssid":"basement_01","password":"basement_01"}},"query":"mutation UpdateRouterAllAccessPoints($input: UpdateRouterAllAccessPointsInput!) {\n  updateRouterAllAccessPoints(input: $input) {\n    accessPoints {\n      id\n      ssid\n      securityMode\n      password\n      radios {\n        frequencyBand\n        channel\n        operatingStandards\n        __typename\n      }\n      __typename\n    }\n    equipmentId\n    __typename\n  }\n}\n"}]
-}
